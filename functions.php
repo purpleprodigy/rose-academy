@@ -65,7 +65,7 @@ add_action( 'wp_enqueue_scripts', 'academy_enqueue_scripts_styles' );
  */
 function academy_enqueue_scripts_styles() {
 
-	wp_enqueue_style( 'academy-fonts', '//fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i|PT+Sans:400,700', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( 'academy-fonts', '//fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans', array(), CHILD_THEME_VERSION );
 
 	wp_enqueue_style( 'academy-sp-icons', get_stylesheet_directory_uri() . '/css/sp-icons.css', array(), CHILD_THEME_VERSION );
 
