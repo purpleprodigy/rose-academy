@@ -657,3 +657,6 @@ genesis_register_sidebar(
 		'description' => __( 'This is the bottom call to action section.', 'academy-pro' ),
 	)
 );
+
+//* Remove the entry meta in the entry header
+remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
