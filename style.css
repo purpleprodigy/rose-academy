@@ -3218,3 +3218,13 @@ p.entry-meta .entry-time {
 	}
 
 }
+.learndash-wrapper-login-modal.ld-modal-open {
+	overflow-y: auto!important;
+}
+
+@media (min-width:1024px) and (max-width:1600px) {
+	.learndash-wrapper .ld-login-modal {
+		margin-top: 35%!important;
+	}
+}
+
