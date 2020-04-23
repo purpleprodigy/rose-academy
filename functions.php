@@ -660,3 +660,14 @@ genesis_register_sidebar(
 
 //* Remove the entry meta in the entry header
 remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
+
+/* Redirect user after check out for TWS course*/
+add_action( 'template_redirect', 'tws_redirect_after_purchase' );
+function tws_redirect_after_purchase() {
+	global $wp;
+
+	if ( is_checkout() && ! empty( $wp->query_vars['order-received'] ) ) {
+		wp_redirect( 'https://members.rosecox.com/courses/website-solution/' );
+		exit;
+	}
+}
